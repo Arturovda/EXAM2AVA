@@ -1,0 +1,133 @@
+---
+title: "EXAM2AVA"
+author: "ARTURO VAZQUEZ DE ANDA"
+date: "6/28/2021"
+output: pdf_document
+---
+
+#1
+
+rm(list = ls())
+  #environment emptied
+  
+#2
+
+  #moved data from excel to r
+
+college_scorecard <- read.table(pipe("pbpaste"), sep="\t", header = TRUE)
+  
+  
+#3
+
+summary(college_scorecard)
+            
+             unitid        inst_name          state_abbr       
+ Min.   :100654   Length:24918       Length:24918      
+ 1st Qu.:164739   Class :character   Class :character  
+ Median :214476   Mode  :character   Mode  :character  
+ Mean   :269219                                        
+ 3rd Qu.:428286                                        
+ Max.   :489830                                        
+                                                       
+ pred_degree_awarded_ipeds      year       earnings_med    count_not_working
+ Min.   :1.000             Min.   :2007   Min.   :  8400   Min.   :    0.0  
+ 1st Qu.:1.000             1st Qu.:2011   1st Qu.: 24500   1st Qu.:   47.0  
+ Median :2.000             Median :2013   Median : 31300   Median :  119.0  
+ Mean   :1.892             Mean   :2012   Mean   : 33181   Mean   :  399.7  
+ 3rd Qu.:3.000             3rd Qu.:2014   3rd Qu.: 39600   3rd Qu.:  314.0  
+ Max.   :3.000             Max.   :2016   Max.   :171900   Max.   :15960.0  
+ NA's   :1                 NA's   :1      NA's   :8149     NA's   :8154     
+ count_working  
+ Min.   :    8  
+ 1st Qu.:  206  
+ Median :  601  
+ Mean   : 2277  
+ 3rd Qu.: 1526  
+ Max.   :94724  
+ NA's   :7655 
+ 
+ #quick summary of data transferred from college scorecard sheet
+ 
+#4
+ 
+ small_scorecard <- 
+ low on time
+ 
+#5
+ 
+ low on time
+ 
+#6
+ 
+ bargraph(even_smaller_scorecard)
+  couldnt run code due to uncompleted variable
+ 
+#7
+ 
+Those located in Texas had a better chance of being employed. Certain colleges and the locality of said colleges does influence the chances and opportunities for someone to obtain a job.
+  manually looked at data to derive to conclusion that Texas provides better opportunities and higher probability of being employed than Louisiana.
+ 
+#8
+ 
+ #loaded the data set and named said dataset
+ 
+ avocados <- read.table(pipe("pbpaste"), sep="\t", header = TRUE)
+
+
+#9
+
+year <- read.table(pipe("pbpaste"), sep="\t", header = TRUE)
+
+#10
+
+low on time 
+
+#11
+
+low on time
+
+#12
+
+low on time
+
+#13
+
+low on time
+
+#14
+
+  #loaded dataset and named it training
+training <- read.table(pipe("pbpaste"), sep="\t", header = TRUE)
+
+#15
+
+low on time
+
+#16
+
+  #loaded dataset and named it titanic
+titanic <- read.table(pipe("pbpaste"), sep="\t", header = TRUE)
+
+#17
+
+  #quick summary set from dataset titanic
+summary(titanic)
+     class            age             female          survived    
+ Min.   :1.000   Min.   :0.0000   Min.   :0.0000   Min.   :0.000  
+ 1st Qu.:2.000   1st Qu.:1.0000   1st Qu.:1.0000   1st Qu.:0.000  
+ Median :3.000   Median :1.0000   Median :1.0000   Median :0.000  
+ Mean   :2.977   Mean   :0.9505   Mean   :0.7865   Mean   :0.323  
+ 3rd Qu.:4.000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.000  
+ Max.   :4.000   Max.   :1.0000   Max.   :1.0000   Max.   :1.000  
+ 
+#18
+
+low on time
+
+#19
+
+first class <- ifelse("class=1")
+
+#Bonus
+
+"My heart will go on" by Celine Dion
